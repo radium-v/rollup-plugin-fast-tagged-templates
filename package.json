@@ -26,13 +26,15 @@
     "css",
     "html"
   ],
-  "devDependencies": {
+  "dependencies": {
     "estree-walker": "^3.0.3",
-    "html-minifier-terser": "^7.2.0",
     "magic-string": "^0.30.12",
-    "rollup": "^4.0.0",
+    "html-minifier-terser": "^7.2.0"
+  },
+  "devDependencies": {
     "beachball": "^2.47.1",
-    "dedent": "^1.5.3"
+    "dedent": "^1.5.3",
+    "rollup": "^4.0.0"
   },
   "scripts": {
     "test": "node test/index.test.mjs",
