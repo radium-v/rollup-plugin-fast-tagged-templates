@@ -2,6 +2,29 @@
   "name": "rollup-plugin-fast-tagged-templates",
   "entries": [
     {
+      "date": "Mon, 21 Oct 2024 04:12:02 GMT",
+      "version": "1.0.1",
+      "tag": "rollup-plugin-fast-tagged-templates_v1.0.1",
+      "comments": {
+        "none": [
+          {
+            "author": "863023+radium-v@users.noreply.github.com",
+            "package": "rollup-plugin-fast-tagged-templates",
+            "commit": "ab5bdfbd2b2b82396fdbc6e697cceaa15fd467b8",
+            "comment": "add CHANGELOG and CONTRIBUTING to npmignore"
+          }
+        ],
+        "patch": [
+          {
+            "author": "863023+radium-v@users.noreply.github.com",
+            "package": "rollup-plugin-fast-tagged-templates",
+            "commit": "e99c642010b61a35d123138f88c538b47f4e6296",
+            "comment": "remove plus symbol from css replacer"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 21 Oct 2024 03:57:37 GMT",
       "version": "1.0.0",
       "tag": "rollup-plugin-fast-tagged-templates_v1.0.0",
