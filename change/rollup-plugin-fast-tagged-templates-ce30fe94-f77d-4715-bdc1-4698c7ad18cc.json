@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "fix dependencies",
-  "packageName": "rollup-plugin-fast-tagged-templates",
-  "email": "863023+radium-v@users.noreply.github.com",
-  "dependentChangeType": "patch"
-}

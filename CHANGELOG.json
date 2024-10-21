@@ -2,6 +2,21 @@
   "name": "rollup-plugin-fast-tagged-templates",
   "entries": [
     {
+      "date": "Mon, 21 Oct 2024 17:18:49 GMT",
+      "version": "1.0.2",
+      "tag": "rollup-plugin-fast-tagged-templates_v1.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "863023+radium-v@users.noreply.github.com",
+            "package": "rollup-plugin-fast-tagged-templates",
+            "commit": "022d47061cf8b15b21e26849362eb304d8256bb6",
+            "comment": "fix dependencies"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 21 Oct 2024 04:12:02 GMT",
       "version": "1.0.1",
       "tag": "rollup-plugin-fast-tagged-templates_v1.0.1",

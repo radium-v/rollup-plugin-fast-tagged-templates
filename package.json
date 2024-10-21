@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-fast-tagged-templates",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minify and transform FAST HTML and CSS tagged templates",
   "author": "John Kreitlow <john@kreitlow.rocks> (https://john.kreitlow.rocks)",
   "license": "MIT",
