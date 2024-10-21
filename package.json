@@ -1,0 +1,43 @@
+{
+  "name": "rollup-plugin-fast-tagged-templates",
+  "version": "0.0.0",
+  "description": "Minify and transform FAST HTML and CSS tagged templates",
+  "author": "John Kreitlow <john@kreitlow.rocks> (https://john.kreitlow.rocks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radium-v/rollup-plugin-fast-tagged-templates/issues"
+  },
+  "homepage": "https://github.com/radium-v/rollup-plugin-fast-tagged-templates#readme",
+  "exports": {
+    ".": "./index.mjs",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radium-v/rollup-plugin-fast-tagged-templates.git"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "fast-components",
+    "fast-element",
+    "web-components",
+    "custom-elements",
+    "tagged-templates",
+    "css",
+    "html"
+  ],
+  "devDependencies": {
+    "estree-walker": "^3.0.3",
+    "html-minifier-terser": "^7.2.0",
+    "magic-string": "^0.30.12",
+    "rollup": "^4.0.0",
+    "beachball": "^2.47.1",
+    "dedent": "^1.5.3"
+  },
+  "scripts": {
+    "test": "node test/index.test.mjs",
+    "change": "beachball change",
+    "checkchange": "beachball check",
+    "release": "beachball publish"
+  }
+}
