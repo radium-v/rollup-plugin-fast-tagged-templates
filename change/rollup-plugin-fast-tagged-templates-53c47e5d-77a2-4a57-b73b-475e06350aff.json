@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "remove plus symbol from css replacer",
+  "packageName": "rollup-plugin-fast-tagged-templates",
+  "email": "863023+radium-v@users.noreply.github.com",
+  "dependentChangeType": "patch"
+}

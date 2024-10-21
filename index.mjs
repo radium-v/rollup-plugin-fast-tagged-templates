@@ -35,8 +35,8 @@ export default function FASTTaggedTemplates(
             match.includes(replacer) ? match : ""
         );
 
-        // Remove spaces before and after the following characters: + ~ > : , / { }
-        source = source.replace(/\s*([+~>:,;/{}])\s+/g, "$1");
+        // Remove spaces before and after the following characters: ~ > : , / { }
+        source = source.replace(/\s*([~>:,;/{}])\s+/g, "$1");
 
         // Remove the last semicolon in each block
         source = source.replace(/;}/g, "}");
