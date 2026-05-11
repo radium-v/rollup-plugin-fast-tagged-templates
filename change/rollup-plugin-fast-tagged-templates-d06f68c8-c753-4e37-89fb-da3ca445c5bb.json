@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "update rollup to version 4.60.3 in package-lock.json",
+  "packageName": "rollup-plugin-fast-tagged-templates",
+  "email": "863023+radium-v@users.noreply.github.com",
+  "dependentChangeType": "none"
+}
