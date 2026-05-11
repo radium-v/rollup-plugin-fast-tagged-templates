@@ -98,7 +98,7 @@ export default function FASTTaggedTemplates(
                     /** @type {import("rollup").RollupAstNode<import("estree").TemplateElement>[]} */
                     const quasis = node.quasi?.quasis ?? node.arguments?.[0]?.quasis;
 
-                    if (!name || !quasis) {
+                    if (!name || !quasis || !transformers[name]) {
                         return;
                     }
 
