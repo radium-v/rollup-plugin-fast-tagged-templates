@@ -1,8 +1,16 @@
 # Change Log - rollup-plugin-fast-tagged-templates
 
-<!-- This log was last generated on Mon, 21 Oct 2024 17:18:49 GMT and should not be manually modified. -->
+<!-- This log was last generated on Mon, 11 May 2026 01:41:19 GMT and should not be manually modified. -->
 
 <!-- Start content -->
+
+## 1.0.3
+
+Mon, 11 May 2026 01:41:19 GMT
+
+### Patches
+
+- avoid transforming call expressions with non-transformer function names (863023+radium-v@users.noreply.github.com)
 
 ## 1.0.2
 
