@@ -226,4 +226,44 @@ describe("FASTTaggedTemplates", () => {
 
         assert.match(code, /html.partial\(\`<div><slot><\/slot><\/div>\`\);/);
     });
+
+    test("should not transform call expressions with non-transformer function names", async t => {
+        const plugins = FASTTaggedTemplates();
+        const input = "component.js";
+
+        const dir = realFs(getTestName(t), {
+            [input]: dedent`
+                throw TypeError(\`Expected a string but got \${typeof value}\`);
+            `,
+        });
+
+        const output = await build({ dir, input, plugins });
+
+        const [{ code }] = output;
+
+        assert.match(code, /TypeError\(`Expected a string but got \$\{typeof value\}`\)/);
+    });
+
+    test("should not transform call expressions with non-transformer names alongside real transforms", async t => {
+        const plugins = FASTTaggedTemplates();
+        const input = "component.js";
+
+        const dir = realFs(getTestName(t), {
+            [input]: dedent`
+                const message = TypeError(\`invalid value: \${val}\`);
+                export const styles = css\`
+                    :host {
+                        color: red;
+                    }
+                \`;\n
+            `,
+        });
+
+        const output = await build({ dir, input, plugins });
+
+        const [{ code }] = output;
+
+        assert.match(code, /TypeError\(`invalid value: \$\{val\}`\)/);
+        assert.match(code, /css\`:host\{color:red\}\`;/);
+    });
 });
